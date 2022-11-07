@@ -26,6 +26,6 @@ def verify_key(storage: str, api_key: str) -> bool:
     received_hashed_api_key = hashlib.pbkdf2_hmac('sha256', api_key.encode('utf-8'), salt, 100000)
 
     if hashed_api_key == received_hashed_api_key:
-	return True
+	    return True
 
     return False
