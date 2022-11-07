@@ -9,3 +9,11 @@ def hash_api_key(api_key: str) -> str:
     storage = salt + key
 
     return storage
+
+
+def get_salt_from_storage(hashed_key: str) -> str:
+    return hashed_key[:32]
+
+
+def get_key_from_storage(hashed_key: str) -> str:
+    return hashed_key[32:]
