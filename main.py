@@ -2,7 +2,7 @@ import hashlib
 import os
 
 
-def hash_api_key(api_key: str) -> str:
+def hash_api_key(api_key: str) -> bytes:
     salt = os.urandom(32)
     key = hashlib.pbkdf2_hmac("sha256", api_key.encode("utf-8"), salt, 100000)
 
@@ -11,11 +11,11 @@ def hash_api_key(api_key: str) -> str:
     return storage
 
 
-def get_salt_from_storage(storage: str) -> str:
+def get_salt_from_storage(storage: bytes) -> bytes:
     return storage[:32]
 
 
-def get_hashed_api_key_from_storage(storage: str) -> str:
+def get_hashed_api_key_from_storage(storage: bytes) -> bytes:
     return storage[32:]
 
 
