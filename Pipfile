@@ -10,6 +10,7 @@ black = "*"
 isort = "*"
 flake8 = "*"
 twine = "*"
+tqdm = "*"
 
 [requires]
 python_version = "3.10"
