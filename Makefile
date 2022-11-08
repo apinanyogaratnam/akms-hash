@@ -1,3 +1,5 @@
+.PHONY: build
+
 format:
 	black .
 	isort .
