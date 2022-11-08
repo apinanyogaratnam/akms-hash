@@ -4,7 +4,7 @@ with open('README.md', 'r') as f:
     long_description = f.read()
 
 setuptools.setup(
-    name='cachier-python',
+    name='akms-hash',
     version='0.1.0',
     author='apinanyogaratnam',
     author_email='apinanapinan@icloud.com',
