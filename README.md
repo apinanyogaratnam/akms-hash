@@ -1,1 +1,3 @@
-# TODO: create this as a package
+AKMS Hash
+
+An API Key hashing library.
