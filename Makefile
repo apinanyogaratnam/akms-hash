@@ -11,4 +11,4 @@ build:
 	python setup.py sdist bdist_wheel
 
 upload:
-	twine upload dist/*
+	twine upload dist/* --skip-existing
