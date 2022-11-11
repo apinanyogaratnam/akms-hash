@@ -1,5 +1,8 @@
 .PHONY: build
 
+lint:
+	flake8 .
+
 format:
 	black .
 	isort .
