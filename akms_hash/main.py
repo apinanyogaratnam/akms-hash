@@ -23,7 +23,7 @@ def __get_hashed_api_key_from_storage(storage: bytes) -> bytes:
     return storage[32:]
 
 
-def verify_api_key(storage: str, api_key: str) -> bool:
+def verify_api_key(storage: bytes, api_key: str) -> bool:
     salt = __get_salt_from_storage(storage)
     hashed_api_key = __get_hashed_api_key_from_storage(storage)
 
