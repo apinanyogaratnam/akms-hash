@@ -12,3 +12,8 @@ build:
 
 upload:
 	twine upload dist/* --skip-existing
+
+workflow:
+	make build
+	make upload
+	version = $(shell python setup.py --version)
