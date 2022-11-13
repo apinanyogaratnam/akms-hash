@@ -9,8 +9,8 @@ env:
   CR_PAT: ${{ secrets.CR_PAT }}
 
 jobs:
-  if: ${{ false }}
   build:
+    if: ${{ false }}
     name: Build Image
     runs-on: ubuntu-latest
     steps:
