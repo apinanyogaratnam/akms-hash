@@ -1,4 +1,5 @@
 .PHONY: build
+VERSION = $(shell python setup.py --version)
 
 lint:
 	flake8 .
@@ -16,4 +17,5 @@ upload:
 workflow:
 	make build
 	make upload
-	version = $(shell python setup.py --version)
+	git tag -m "v${VERSION}" v${VERSION}
+	git push --tags
