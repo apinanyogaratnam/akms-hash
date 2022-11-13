@@ -14,6 +14,7 @@ build:
 upload:
 	twine upload dist/* --skip-existing
 
+# build and upload to pypi and push tag to github
 workflow:
 	make build
 	make upload
