@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="akms-hash",
-    version="0.3.1",
+    version="0.4.0",
     author="apinanyogaratnam",
     author_email="apinanapinan@icloud.com",
     description="An API Key hashing library",
@@ -18,6 +18,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires=">=3.10.4",
+    python_requires=">=3.8",
     install_requires=[],
 )
